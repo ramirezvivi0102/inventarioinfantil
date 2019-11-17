@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using BOUTIQUE.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,5 +13,6 @@ namespace BOUTIQUE.Data
             : base(options)
         {
         }
+        public DbSet<Producto> Producto { get; set; }
     }
 }
