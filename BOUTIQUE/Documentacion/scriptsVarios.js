@@ -10,3 +10,6 @@ isabella0102C*
 3. Actualizar la base de datos (para que tablas de administracion de usuarios se creen en la bd)
 	PM> update-database
 
+======================   ACTUALIZAR LOS MODELOS DESDE CAMBIOS EN LA BD (DataBase First) ===================
+    Scaffold-DbContext "server=localhost;port=3306;database=inventario;user=root;password=" Pomelo.EntityFrameworkCore.MySql -OutputDir Models -Context ApplicationDbContext -Force
+
